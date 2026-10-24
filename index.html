@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Darryl Juan Surbakti — Portofolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&family=Special+Elite&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07090d;--panel:#0e131b;--fg:#e8eaee;--mute:#8d949f;--line:#262d38;--blue:#2f6bff;--ice:#a9c7ff;--navy:#0d1d44;
+--d:'Anton','Impact','Arial Narrow',sans-serif;--t:'Special Elite','Courier New',monospace;--b:'DM Sans',system-ui,sans-serif;
+color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 1.05rem/1.65 var(--b);overflow-x:hidden}
+/* tekstur grunge */
+body::before{content:"";position:fixed;inset:0;z-index:50;pointer-events:none;opacity:.34;mix-blend-mode:overlay;
+background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1.4 -.35'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+body::after{content:"";position:fixed;inset:0;z-index:49;pointer-events:none;opacity:.5;
+background:radial-gradient(ellipse at 50% 40%,transparent 45%,#000 120%),repeating-linear-gradient(97deg,transparent 0 140px,rgba(255,255,255,.025) 141px 142px,transparent 143px 310px)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ice);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 clamp(1.1rem,4vw,2rem)}
+nav{position:sticky;top:0;z-index:40;background:rgba(7,9,13,.88);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-top:.7rem;padding-bottom:.7rem}
+nav b{font:400 1.2rem var(--d);letter-spacing:.05em}
+nav ul{display:flex;gap:1.3rem;list-style:none;margin:0;padding:0;overflow-x:auto;font:.95rem var(--t)}
+nav a{text-decoration:none;color:var(--mute);white-space:nowrap}nav a:hover{color:var(--ice)}
+/* hero */
+.hero{padding:clamp(3rem,9vw,6rem) 0 2rem;position:relative}
+.stamp{display:inline-block;font:1rem var(--t);color:var(--bg);background:var(--ice);padding:.2rem .7rem;transform:rotate(-2deg);margin-bottom:1.2rem}
+h1{font:400 clamp(4.2rem,17vw,12.5rem)/.86 var(--d);text-transform:uppercase;margin:0;letter-spacing:-.01em;position:relative}
+h1 span{display:block;position:relative;text-shadow:5px 4px 0 var(--blue);animation:reg 1.4s cubic-bezier(.2,.8,.2,1) both}
+h1 span+span{color:transparent;-webkit-text-stroke:2px var(--fg);text-shadow:-5px 3px 0 var(--navy);animation-delay:.15s}
+@keyframes reg{0%{transform:translate(-18px,6px) skewX(-8deg);opacity:0;text-shadow:-26px 0 0 var(--blue)}35%{opacity:1}100%{transform:none}}
+.lead{max-width:34rem;margin:1.8rem 0 1.4rem;color:#c3c8d0}
+.cta{display:flex;flex-wrap:wrap;gap:.8rem;align-items:center}
+.btn{font:1rem var(--t);text-decoration:none;padding:.75rem 1.3rem;border:2px solid var(--fg);transition:background .15s,color .15s,transform .15s}
+.btn.p{background:var(--blue);border-color:var(--blue);color:#fff}
+.btn:hover{background:var(--fg);color:var(--bg);transform:rotate(-1.5deg)}
+.eq{display:flex;gap:4px;align-items:flex-end;height:34px;margin-left:.6rem}
+.eq i{width:6px;background:var(--blue);animation:eq 1s ease-in-out infinite alternate;height:100%;transform-origin:bottom}
+.eq i:nth-child(2){animation-delay:-.4s}.eq i:nth-child(3){animation-delay:-.8s}.eq i:nth-child(4){animation-delay:-.2s}.eq i:nth-child(5){animation-delay:-.6s}
+@keyframes eq{from{transform:scaleY(.2)}to{transform:scaleY(1)}}
+.tape{background:var(--blue);color:#fff;transform:rotate(-1.6deg);margin:2.5rem -4vw 0;overflow:hidden;border-block:2px solid var(--fg);font:400 1.5rem/1 var(--d);letter-spacing:.06em;white-space:nowrap}
+.tape div{display:inline-block;padding:.7rem 0;animation:mq 28s linear infinite}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* section */
+section{padding:clamp(3.5rem,8vw,6rem) 0}
+h2{font:400 clamp(2.4rem,7vw,4.4rem)/1 var(--d);text-transform:uppercase;margin:0 0 2rem}
+h2::after{content:"";display:block;width:90px;height:8px;margin-top:.7rem;background:var(--blue);clip-path:polygon(0 30%,12% 0,30% 40%,52% 0,70% 50%,100% 10%,96% 100%,60% 70%,30% 100%,8% 70%)}
+.about{display:grid;grid-template-columns:1.5fr 1fr;gap:clamp(1.5rem,5vw,4rem);align-items:start}
+.about p{margin:0 0 1.1rem;max-width:38rem}
+.card{background:var(--panel);border:1px solid var(--line);padding:1.4rem;transform:rotate(1.2deg);box-shadow:8px 8px 0 var(--navy)}
+.card h3{font:400 1.3rem var(--t);margin:0 0 .8rem;color:var(--ice)}
+.card dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:.45rem 1rem;font-size:.95rem}
+.card dt{color:var(--mute)}.card dd{margin:0}
+/* setlist */
+.set{list-style:none;margin:0;padding:0;border-top:2px solid var(--fg)}
+.set li{display:grid;grid-template-columns:5.2rem 1fr;gap:1rem;padding:1.15rem 0;border-bottom:1px dashed var(--line)}
+.set time{font:1rem var(--t);color:var(--ice);padding-top:.25rem}
+.set h3{font:400 1.6rem/1.15 var(--d);letter-spacing:.02em;margin:0;text-transform:uppercase}
+.set em{font:normal .98rem var(--t);color:var(--mute)}
+.set p{margin:.3rem 0 0;max-width:40rem;color:#c3c8d0;font-size:.98rem}
+.set li:hover h3{color:var(--ice)}
+/* proyek */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:1.6rem}
+.proj{position:relative;min-height:260px;padding:1.5rem;border:2px solid var(--fg);display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;background:var(--panel)}
+.proj::before{content:"";position:absolute;inset:0;opacity:.9;z-index:0}
+.proj>*{position:relative}
+.proj:nth-child(1)::before{background:repeating-linear-gradient(135deg,var(--navy) 0 14px,#09122a 14px 28px)}
+.proj:nth-child(2)::before{background:radial-gradient(circle at 70% 30%,var(--blue),transparent 55%),radial-gradient(#fff2 1.2px,transparent 1.5px) 0 0/9px 9px,#0a0f1a}
+.proj:nth-child(3)::before{background:linear-gradient(160deg,#1b212c,#07090d),repeating-linear-gradient(0deg,#fff1 0 2px,transparent 2px 7px)}
+.proj:nth-child(2){transform:rotate(-1deg)}.proj:nth-child(3){transform:rotate(.8deg)}
+.proj h3{font:400 2rem/1 var(--d);text-transform:uppercase;margin:.3rem 0 .5rem;text-shadow:3px 3px 0 #000}
+.proj small{font:.95rem var(--t);background:var(--bg);color:var(--ice);align-self:flex-start;padding:.1rem .5rem}
+.proj p{margin:0;font-size:.97rem;text-shadow:0 1px 6px #000}
+/* skill */
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:1.6rem}
+.chips span{border:1.5px solid var(--mute);padding:.35rem .9rem;font:.98rem var(--t);transition:background .15s,color .15s}
+.chips span:hover{background:var(--blue);border-color:var(--blue);color:#fff}
+.chips span.b{border-color:var(--blue);color:var(--ice)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:2rem}
+.cols h3{font:400 1.4rem var(--t);margin:0 0 .9rem;color:var(--ice)}
+/* kontak */
+.contact{background:var(--blue);color:#fff;text-align:center;padding:clamp(3rem,8vw,5.5rem) 1rem;border-block:2px solid var(--fg);position:relative}
+.contact h2{margin-bottom:1rem}.contact h2::after{margin:.7rem auto 0;background:#fff}
+.contact p{max-width:32rem;margin:0 auto 1.6rem}
+.contact .btn{border-color:#fff;color:#fff;display:inline-block;margin:.3rem}
+.contact .btn:hover{background:#fff;color:var(--blue)}
+footer{padding:1.6rem 0;color:var(--mute);font:.92rem var(--t);text-align:center}
+@media(max-width:720px){.about{grid-template-columns:1fr}.set li{grid-template-columns:1fr;gap:.2rem}nav ul{gap:1rem}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>DJS</b><ul>
+<li><a href="#tentang">Tentang</a></li><li><a href="#setlist">Setlist</a></li><li><a href="#proyek">Proyek</a></li><li><a href="#skill">Skill</a></li><li><a href="#kontak">Kontak</a></li></ul></div></nav>
+
+<header class="hero"><div class="wrap">
+<span class="stamp">MC · Kreatif Direktur · Desainer · Performer</span>
+<h1><span>Darryl</span><span>Surbakti</span></h1>
+<p class="lead">Saya Darryl Juan Surbakti, dikenal juga sebagai <b>@antropo_morphin</b>. Lima tahun di media kreatif: dari desain grafis dan produksi acara sampai memegang mikrofon di depan penonton, di Jakarta.</p>
+<div class="cta"><a class="btn p" href="#setlist">Lihat setlist saya</a><a class="btn" href="https://www.instagram.com/antropo_morphin/" target="_blank" rel="noopener">Instagram</a>
+<div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div></div>
+</div>
+<div class="tape" aria-hidden="true"><div>MC ★ DIRECTOR ★ GRAPHIC DESIGNER ★ PERFORMER ★ MC ★ DIRECTOR ★ GRAPHIC DESIGNER ★ PERFORMER ★ MC ★ DIRECTOR ★ GRAPHIC DESIGNER ★ PERFORMER ★ MC ★ DIRECTOR ★ GRAPHIC DESIGNER ★ PERFORMER ★ </div></div>
+</header>
+
+<main>
+<section id="tentang"><div class="wrap">
+<h2>Tentang</h2>
+<div class="about">
+<div>
+<p>Saya orang yang suka bikin sesuatu dari nol sampai tampil di depan orang. Lima tahun terakhir saya mengerjakan media kreatif secara menyeluruh: merancang visual, mengurus produksi, mempromosikan acara, lalu naik panggung sebagai MC.</p>
+<p>Sekarang saya menjadi Director di Redmind, Creative Director di Grab The Mic Collective, dan MC klub. Di sela itu saya kuliah Seni Pertunjukan di Institut Media Digital EMTEK.</p>
+<p>Saya berkomitmen pada hasil yang baik, dan terus mengejar yang lebih baik lagi.</p>
+</div>
+<aside class="card"><h3>Kartu identitas</h3><dl>
+<dt>Basis</dt><dd>Jakarta Selatan</dd>
+<dt>Studi</dt><dd>Seni Pertunjukan, IMDE (2025–kini)</dd>
+<dt>Bahasa</dt><dd>Indonesia &amp; Inggris, keduanya fasih</dd>
+<dt>Cari</dt><dd>Panggung, proyek kreatif, kolaborasi</dd></dl></aside>
+</div></div></section>
+
+<section id="setlist"><div class="wrap">
+<h2>Setlist</h2>
+<p style="margin:-1rem 0 2rem;color:var(--mute);max-width:36rem">Perjalanan karier saya, dari yang terbaru di paling atas.</p>
+<ol class="set">
+<li><time>2026</time><div><h3>Director</h3><em>Redmind (EO)</em><p>Merancang arah seni dan konsep keseluruhan acara, serta berkonsultasi dan mengambil keputusan kreatif dan operasional.</p></div></li>
+<li><time>Jakarta</time><div><h3>Creative Director</h3><em>Grab The Mic Collective</em><p>Menyusun perencanaan kreatif dan program kolektif, serta membuat rencana konten.</p></div></li>
+<li><time>Blok M</time><div><h3>Karaoke Lead</h3><em>Lucy Beer Mart</em><p>Memimpin karaoke bersama rekan atau penonton, dan berbaur dengan semua orang agar suasana tempat tetap hidup.</p></div></li>
+<li><time>2025</time><div><h3>Pemeran Utama</h3><em>Film pendek “Switch”</em><p>Dibuat oleh mahasiswa IMDE dan bisa ditonton di YouTube.</p></div></li>
+<li><time>2024–kini</time><div><h3>Clubbing MC</h3><em>Redmind (EO)</em><p>Memanaskan suasana penonton dan DJ di setiap acara, serta menyampaikan pesan dari lagu yang diputar DJ ke penonton.</p></div></li>
+<li><time>2023–2024</time><div><h3>Supervisor &amp; Desainer Grafis</h3><em>PT Global Kreasi Maxima</em><p>Mengelola proyek yang sedang berjalan dan yang akan datang, merapikan seluruh data, dan mengerjakan banyak desain untuk berbagai proyek.</p></div></li>
+<li><time>2023–2024</time><div><h3>Public Relations &amp; Marketing</h3><em>Nightwalkers (EO)</em><p>Mempromosikan acara yang sedang berjalan dan yang akan datang, serta mensosialisasikan inti setiap acara.</p></div></li>
+<li><time>2022–2023</time><div><h3>Desainer Grafis &amp; Asisten Produksi</h3><em>PT iDEX Creative Management</em><p>Membuat lebih dari 50 desain grafis untuk perusahaan besar, sambil mengawasi dan mengatur peralatan, set, dan panggung.</p></div></li>
+<li><time>2019</time><div><h3>Asisten Produksi</h3><em>Kresikars XX (event)</em><p>Mengawasi dan mengatur peralatan, set, dan panggung.</p></div></li>
+</ol></div></section>
+
+<section id="proyek"><div class="wrap">
+<h2>Proyek</h2>
+<div class="grid">
+<article class="proj"><small>Desain · 2022–2024</small><h3>50+ Desain Grafis</h3><p>Karya untuk perusahaan besar di iDEX Creative Management dan Global Kreasi Maxima.</p></article>
+<article class="proj"><small>Panggung · 2024–kini</small><h3>Clubbing MC</h3><p>Menghubungkan DJ dengan lantai dansa lewat energi dan pesan dari setiap lagu.</p></article>
+<article class="proj"><small>Film · 2025</small><h3>“Switch”</h3><p>Film pendek karya mahasiswa IMDE, saya bermain sebagai pemeran utama. Tonton di YouTube.</p></article>
+</div></div></section>
+
+<section id="skill"><div class="wrap">
+<h2>Skill</h2>
+<div class="chips">
+<span class="b">Adobe Photoshop</span><span class="b">Adobe Illustrator</span><span class="b">Adobe InDesign</span><span class="b">Fotografi</span><span class="b">Edit foto</span>
+<span>MC acara</span><span>Clubbing MC</span><span>Public speaking</span><span>Marketing</span><span>Berpikir kreatif</span><span>Analisis kreatif</span><span>Pengetahuan kopi</span><span>Pengetahuan kuliner</span>
+</div>
+<div class="cols">
+<div><h3>Cara kerja</h3><p style="margin:0">Kreatif, mudah beradaptasi, pemecah masalah, komunikatif, disiplin soal waktu, dan nyaman bekerja dalam tim.</p></div>
+<div><h3>Pendidikan</h3><p style="margin:0"><b>Institut Media Digital EMTEK</b><br>Seni Pertunjukan, 2025–kini<br><span style="color:var(--mute)">Universitas Gunadarma, Sastra Inggris, 2019–2020</span></p></div>
+</div></div></section>
+</main>
+
+<div class="contact" id="kontak">
+<h2>Ayo bikin sesuatu</h2>
+<p>Butuh MC, arahan kreatif, atau desain? Kirim pesan saja, saya senang ngobrol.</p>
+<a class="btn" href="https://wa.me/628787624085" target="_blank" rel="noopener">WhatsApp</a>
+<a class="btn" href="mailto:darryljs1819@gmail.com">darryljs1819@gmail.com</a>
+<a class="btn" href="https://www.instagram.com/antropo_morphin/" target="_blank" rel="noopener">@antropo_morphin</a>
+</div>
+<footer>© 2026 Darryl Juan Surbakti · Jakarta Selatan</footer>
+</body>
+</html>
